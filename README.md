@@ -8,6 +8,13 @@ A BitTorrent client written in Rust.
 
 ## Usage
 
+`matey` currently only supports a limited subset of
+real-world torrent files, the primary type defined in [BEP
+0003](https://www.bittorrent.org/beps/bep_0003.html). This means no support for
+multiple announcers or the DHT protocol. In practice, unfortunately, this means
+that most real-world torrents don't work with it, but a good deal do, such as
+those distributed by mainstream Linux distributions, for instance.
+
 `cargo run <filename>`
 
 ![](https://i.imgur.com/WlyutF1.gif)
